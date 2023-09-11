@@ -2,9 +2,10 @@
   "name": "bardo",
   "version": "1.0.0",
   "description": "A discord music bot intended for use in Discord RPG campaigns",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,12 @@
   ],
   "author": "Alanito",
   "license": "ISC",
+
   "bugs": {
     "url": "https://github.com/AlanTheCommunist/Bardo/issues"
   },
   "homepage": "https://github.com/AlanTheCommunist/Bardo#readme",
+
   "dependencies": {
     "@discordjs/builders": "^1.6.3",
     "@discordjs/opus": "^0.9.0",
@@ -33,6 +36,8 @@
     "dotenv": "^16.1.4"
   },
   "devDependencies": {
-    "eslint": "^8.42.0"
-  }
+    "eslint": "^8.42.0",
+    "nodemon": "^2.0.22"
+  },
+  "type": "module"
 }
